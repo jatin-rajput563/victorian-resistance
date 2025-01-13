@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>VICTORIAN-RESISTANCE</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/root.css  ">
     <link rel="shortcut icon" href="./assets/image/svg/logo.svg" type="image/x-icon">
@@ -26,14 +26,28 @@
                 <div>
                     <img src="./assets/image/svg/logo.svg" alt="logo">
                 </div>
-                <ul class="list-unstyled d-flex justify-content-between w-100 py-3 px-2">
+                <div onclick="navbarbtn()" class="z-5 d-block d-lg-none">
+                    <span class="menu-lines" id="rotats"></span>
+                    <span class="menu-lines" id="transparent"></span>
+                    <span class="menu-lines" id="rotats2"></span>
+                  </div>
+                <ul id="nav-ul" class="list-unstyled d-flex justify-content-xl-between w-100 py-3 px-2 nav-link">
                     <li>
-                        <p class="fs-16 fw-700 lh-23 sky-blue">VICTORIAN RESISTANCE</p>
+                        <a class="fs-16 fw-700 lh-23 sky-blue oswald-family text-decoration-none z-1 position-relative"
+                            href="#">VICTORIAN RESISTANCE</a>
                     </li>
                     <li>
                         <ul class="d-flex list-unstyled gap-5">
-                            <li class="text-decoration-none list-unstyled">PA02-SIERRA-11 SCOREBOARD</li>
-                            <li class="text-decoration-none list-unstyled">SMURFLING GUIDE</li>
+                            <li>
+                                <a class="text-decoration-none list-unstyled fs-16 fw-700 lh-23 oswald-family"
+                                    href="#">PA02-SIERRA-11 SCOREBOARD</a>
+                            </li>
+
+                            <li>
+                                <a class="text-decoration-none list-unstyled fs-16 fw-700 lh-23 oswald-family"
+                                    href="#">SMURFLING
+                                    GUIDE</a>
+                            </li>
                         </ul>
                     </li>
                     <li>
@@ -49,7 +63,8 @@
                 </ul>
             </nav>
             <div class="mt-5">
-                <h1 class="fs-80 fw-400 lh-118 text-center">JOIN THE VICTORIAN RESISTANCE</h1>
+                <h1 class="fs-80 fw-400 lh-118 text-center mx-607 oswald-family mx-auto pt-48">JOIN THE VICTORIAN
+                    RESISTANCE</h1>
                 <p class="fs-16 fw-400 lh-21 text-center">Defend the world, protect what's yours. Join the Resistance!
                 </p>
                 <button class="fw-700 fs-20 lh-29 dark-blue main-btn d-flex mx-auto mt-5">JOIN THE RESISTANT</button>
@@ -62,22 +77,23 @@
         </div>
     </section>
     <!-- =======section-2========= -->
-    <section class="bg-blue position-relative min-vh-100 mt-190 overflow-hidden">
+    <section class="bg-blue position-relative mt-190 overflow-hidden">
         <div>
             <img class="position-absolute top-rght-layer" src="./assets/image/sec-2-right-top-layer.png" alt="">
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-xl-5  position-relative j">
+                <div class="col-12 col-xl-5  position-relative justify-content-center d-flex">
                     <img class="position-absolute iphone-bg-layer w-100 mt-5" src="./assets/image/iphone-bg-layer.png"
                         alt="iphone-bg-layer">
                     <img class="z-2" src="./assets/image/iphone-12.png" alt="">
                 </div>
                 <div class="col-12 col-xl-7">
                     <div>
-                        <h2 class="fw-400 fs-48 lh-71">ABOUT US</h2>
-                        <p class="mx-627 fs-16 fw-400 lh-25 text-start">Ingress is an augmented reality game that turns
-                            the world around you into a battle, with
+                        <h2 class="fw-400 fs-48 lh-71 pt-3 oswald-family">ABOUT US</h2>
+                        <p class="mx-627 fs-16 fw-400 lh-25 text-start open-family">Ingress is an augmented reality game
+                            that turns
+                            the world around you into a battle, <br> with
                             humankind's minds at stake. <br>
                             Play Ingress on the streets of Victoria. Meet agents who play in the areas you do and fight
                             with them to protect humanity's freedom. Discover agents you can depend on to help you when
@@ -85,16 +101,17 @@
                             Download the mobile scanner app to discover thousands of portals around you. Buildings,
                             historic landmarks and cultural points of interest become portals for you to fight for and
                             defend from alien incursion.</p>
-                        <p class="mx-627 fs-16 fw-400 lh-25 text-start">The Victorian Resistance has a long and proud
+                        <p class="mx-627 fs-16 fw-400 lh-25 text-start open-family">The Victorian Resistance has a
+                            long and proud
                             history of teamwork, collaboration and most
-                            importantly, fun!
+                            importantly, fun! <br>
                             By joining us, you'll have access to regular events so you can stock up on gear, regular
                             operations so you can put your mark on the map, as well as help almost any time of the day
-                            or night.
+                            or night. <br>
                             Joining the community benefits you and everyone else — it takes eight level 8 players to
                             make a level 8 portal, and the easier it is to coordinate with people, the more easily
                             you'll be able to gear up to take and hold your area.</p>
-                        <div class="d-flex gap-30">
+                        <div class="d-flex gap-30 mt-50">
                             <img class="sec-2-btns" src="./assets/image/apple-btn.png" alt="apple-btn">
                             <img class="sec-2-btns" src="./assets/image/google-btn.png" alt="google-btn">
                         </div>
@@ -104,16 +121,16 @@
         </div>
     </section>
     <!-- =======section-3========= -->
-    <section class="bg-blue overflow-hidden">
-        <p class="fw-400 fs-48 lh-71 mx-632 oswald-famly text-center mx-auto">Your world is the game board, and your
+    <section class="bg-blue overflow-hidden mt-190">
+        <p class="fw-400 fs-48 lh-71 mx-632 oswald-family text-center mx-auto">Your world is the game board, and your
             mind is at stake.</p>
         <p class="fw-400 fs-16 lh-21 open-famly mx-516 text-center mx-auto">At the heart of Ingress is a desire to bring
             people together through exploration and teamwork.</p>
         <div class="slider">
             <img class="pl-10" src="./assets/image/slider-img-1.png" alt="slider-img-1">
-            <img class="pl-30 w-671" src="./assets/image/slider-img-2.png" alt="slider-img-2">
+            <img class="pl-30 w-971" src="./assets/image/slider-img-2.png" alt="slider-img-2">
             <img class="pl-30" src="./assets/image/slider-img-3.png" alt="slider-img-3">
-            <img class="pl-30 w-671" src="./assets/image/slider-img-2.png" alt="slider-img-2">
+            <img class="pl-30 w-971" src="./assets/image/slider-img-2.png" alt="slider-img-2">
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -128,10 +145,42 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         $('.slider').slick({
-            infinite: true,
             slidesToShow: 3,
-            slidesToScroll: 3
-        });</script>
+            slidesToScroll: 1,
+            autoplaySpeed: 2000,
+            arrows: false,
+            dots: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                },
+
+
+            ]
+        });
+    </script>
+    <script>
+        const navbarbtn = () => {
+            document.getElementById("nav-ul").classList.toggle("show-nvabar")
+            document.getElementById("rotats").classList.toggle("rotate40")
+            document.getElementById("transparent").classList.toggle("bg-transparent")
+            document.getElementById("rotats2").classList.toggle("rotate-45")
+            document.body.classList.toggle("overflow-hidden")
+        }
+    </script>
 </body>
 
 </html>

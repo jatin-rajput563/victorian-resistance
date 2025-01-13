@@ -1,19 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-.oswald-famly {
-    font-family: "Oswald", serif;
+.oswald-family {
+    font-family: "Oswald", sans-serif;
 }
 
 .open-famly {
-    font-family: "Open Sans", serif;
+    font-family: "Open", sans-serif;
 }
-
 
 .bg-img {
     background-image: url(/assets/image/VICTORIAN-RESISTANCE.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.container {
+    max-width: 1140px !important;
 }
 
 .right-layer {
@@ -27,7 +30,8 @@
 }
 
 .login-btn {
-    padding: 8px 20px 8px 20px;
+    width: 80px;
+    height: 40px;
     border-radius: 3.48px;
     background: #39C6FD;
     border: none;
@@ -42,7 +46,8 @@
 }
 
 .sign-btn {
-    padding: 8px 20px 8px 20px;
+    width: 94px;
+    height: 40px;
     gap: 10px;
     border-radius: 4px;
     background: #070D37;
@@ -53,7 +58,7 @@
 
 .sign-btn:hover {
     background: #39C6FD;
-    color: #070D37;
+    color: #070D37 !important;
 }
 
 .main-btn {
@@ -90,12 +95,12 @@
 }
 
 .iphone-bg-layer {
-    top: -47%;
-    left: -20%;
+    top: -28%;
+    left: -7%;
 }
 
 .top-rght-layer {
-    top: -37%;
+    top: -36%;
     right: -34%;
 }
 
@@ -130,4 +135,86 @@
 
 .mt-190 {
     padding-top: 190px;
+}
+
+.mx-607 {
+    max-width: 607px;
+}
+
+.pt-48 {
+    padding-top: 48px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-12 {
+    margin-top: 12px;
+}
+
+
+.menu-lines {
+    width: 30px;
+    height: 5px;
+    margin-bottom: 5px;
+    background-color: var(--null);
+    display: flex;
+    z-index: 10;
+    transition: all 300ms linear;
+    transform-origin: left;
+    border-radius: 10px;
+    background-color: white !important;
+    position: relative;
+}
+
+.z-5 {
+    z-index: 5;
+}
+
+.rotate40 {
+    transform: rotate(40deg);
+
+}
+
+.rotate-45 {
+    transform: rotate(-46deg);
+
+}
+
+@media (max-width:1130px) {
+    .bug {
+        display: none;
+    }
+
+    .nav-link {
+        display: flex !important;
+        flex-direction: column;
+        background: brown !important;
+        width: 100%;
+        min-height: 100vh;
+        position: fixed;
+        justify-content: center;
+        bottom: 0;
+        right: -100% !important;
+        top: 0%;
+        transition: all 200ms linear !important;
+        z-index: 2;
+    }
+
+    .show-nvabar {
+        right: 0 !important;
+    }
+
+    .menu-btn {
+        display: block;
+        z-index: 1;
+    }
+
+    ul {
+        flex-direction: column;
+        justify-content: center !important;
+        display: flex;
+    }
+    
 }
