@@ -95,7 +95,7 @@
 }
 
 .top-rght-layer {
-    top: -47%;
+    top: -37%;
     right: -34%;
 }
 
@@ -123,6 +123,11 @@
 .mx-971 {
     max-width: 971px !important;
 }
-.phone-card{
+
+.phone-card {
     top: 10%;
+}
+
+.mt-190 {
+    padding-top: 190px;
 }
