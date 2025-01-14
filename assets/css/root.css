@@ -82,3 +82,10 @@
 .bg-blue {
     background-color: var(--dark-blue);
 }
+
+@media (max-width:575.98px) {
+    :root {
+        --fs-80: 63px;
+        --lh-118: 80px;
+    }
+}

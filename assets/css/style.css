@@ -5,7 +5,7 @@
     font-family: "Oswald", sans-serif;
 }
 
-.open-famly {
+.open-family {
     font-family: "Open", sans-serif;
 }
 
@@ -133,7 +133,7 @@
     top: 10%;
 }
 
-.mt-190 {
+.pt-190 {
     padding-top: 190px;
 }
 
@@ -153,6 +153,13 @@
     margin-top: 12px;
 }
 
+.gap-53 {
+    gap: 53px;
+}
+
+.mx-680 {
+    max-width: 680px;
+}
 
 .menu-lines {
     width: 30px;
@@ -216,5 +223,99 @@
         justify-content: center !important;
         display: flex;
     }
-    
+
+    .mt-20 {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:575.98px) {
+    .w-sm-100 {
+        width: 100%;
+    }
+
+    .pt-48 {
+        padding-top: 0;
+    }
+
+    .ml-sm-48 {
+        margin-left: 48px;
+    }
+
+    .pt-190 {
+        padding-top: 43px;
+    }
+
+    .top-rght-layer {
+        display: none;
+    }
+
+    .gap-30 {
+        gap: 3px;
+    }
+
+    .my-50 {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .gap-53 {
+        gap: 0;
+    }
+
+    .pt-20 {
+        padding-top: 20px !important;
+    }
+}
+
+
+
+
+/* --------------section-4---------------- */
+.accordian-para {
+    border-bottom: 2px solid #DDDDDF;
+}
+
+.courser-pointer {
+    cursor: pointer;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.accordion-button::after {
+    background-image: url(/assets/image/svg/accordion-arrow-svg.svg) !important;
+}
+
+.accordion-item {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 2px solid #39C6FD !important;
+    box-shadow: none !important;
+}
+
+.accordion-body {
+    background: #070D37 !important;
+}
+
+.accordion-button {
+    background: #070D37 !important;
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+}
+
+.pr-13 {
+    margin-right: 13px;
+}
+
+.mx-810 {
+    max-width: 810.34px;
+}
+
+.mt-52 {
+    margin-top: 52px;
 }
