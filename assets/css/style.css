@@ -448,3 +448,10 @@
 .pb-200 {
     padding-bottom: 200px;
 }
+
+/* -----------footer--------- */
+.footer-bg-layer {
+    background-image: url(/assets/image/footer-bg-layer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
