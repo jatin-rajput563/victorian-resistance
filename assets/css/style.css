@@ -10,7 +10,7 @@
 }
 
 .bg-img {
-    background-image: url(/assets/image/VICTORIAN-RESISTANCE.png);
+    background-image: url(/assets/image/png/VICTORIAN-RESISTANCE.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -291,7 +291,7 @@
 
 /* -----------section-5----------- */
 .bg-layer {
-    background-image: url(/assets/image/sec-4-bg-layer.png);
+    background-image: url(/assets/image/png/sec-4-bg-layer.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -352,7 +352,7 @@
 
 /* -----------footer--------- */
 .footer-bg-layer {
-    background-image: url(/assets/image/footer-bg-layer.png);
+    background-image: url(/assets/image/png/footer-bg-layer.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
