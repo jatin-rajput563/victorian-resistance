@@ -21,6 +21,8 @@
 
 <body class="text-white bg-blue">
     <section class="bg-img min-vh-100 position-relative">
+        <img class="sec-1-top-right-layer position-absolute" src="./assets/image/sec-1-top-right-layer.png"
+            alt="sec-1-top-right-layer">
         <div class="container">
             <nav class="d-flex justify-content-center justify-content-between py-3">
                 <div>
@@ -83,7 +85,7 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-5  position-relative justify-content-center d-flex ">
+                <div class="col-12 col-md-5  position-relative justify-content-center d-flex">
                     <img class="position-absolute iphone-bg-layer w-100 mt-5" src="./assets/image/iphone-bg-layer.png"
                         alt="iphone-bg-layer">
                     <img class="z-2 ml-sm-48 " src="./assets/image/iphone-12.png" alt="">
@@ -127,18 +129,14 @@
         <p class="fw-400 fs-16 lh-21 open-famly mx-516 text-center mx-auto">At the heart of Ingress is a desire to bring
             people together through exploration and teamwork.</p>
         <div class="slider">
-            <img class="slider-image-size pl-30 d-flex mx-auto" src="./assets/image/slider-img-1.png"
-                alt="slider-img-1">
-            <img class="slider-image-size pl-30 d-flex mx-auto" src="./assets/image/slider-img-2.png"
-                alt="slider-img-2">
-            <img class="slider-image-size pl-30 d-flex mx-auto" src="./assets/image/slider-img-3.png"
-                alt="slider-img-3">
-            <img class="slider-image-size pl-30 d-flex mx-auto" src="./assets/image/slider-img-2.png"
-                alt="slider-img-2">
+            <img class="slider-image-size pl-30 d-flex" src="./assets/image/slider-img-1.png" alt="slider-img-1">
+            <img class="slider-image-size pl-30 d-flex" src="./assets/image/slider-img-2.png" alt="slider-img-2">
+            <img class="slider-image-size pl-30 d-flex" src="./assets/image/slider-img-3.png" alt="slider-img-3">
+            <img class="slider-image-size pl-30 d-flex" src="./assets/image/slider-img-2.png" alt="slider-img-2">
         </div>
     </section>
     <!-- =======section-4========= -->
-    <section class="bg-blue position-relative min-vh-100">
+    <section class="bg-blue position-relative">
         <h1 class="fw-400 fs48 lh-71 oswald-family text-center">FAQs</h1>
         <p class="fw-400 fs-16 lh-21 open-family mx-680 text-center mx-auto pb-77 ">Porta maecenas consequat sed neque
             gravida
@@ -231,10 +229,11 @@
         </div>
     </section>
     <!-- =======section-5========= -->
-    <section class="bg-layer min-vh-100 mt-190 justify-content-center align-items-center d-flex position-relative">
+    <section class="bg-layer min-vh-100 justify-content-center align-items-center d-flex position-relative">
         <div class="container">
             <div class="sec-4-main-box">
-                <img class="sec-4-iphone-1 d-xl-none d-flex mx-auto mt-4 pl-30 w-sm-100" src="./assets/image/sec-4-iphone.png" alt="">
+                <img class="sec-4-iphone-1 d-xl-none d-flex mx-auto mt-4 pl-30 w-sm-100"
+                    src="./assets/image/sec-4-iphone.png" alt="">
                 <h1 class="oswald-family fw-400 fs-48 lh-71 pt-65 ml-73">JOIN THE RESISTANCE</h1>
                 <p class="open-family fw-400 fs-16 lh-21 mx-582 pt-10 ml-73">Volutpat etiam tincidunt leo amet pulvinar.
                     Adipiscing
@@ -246,7 +245,9 @@
         </div>
     </section>
     <!-- =======section-5========= -->
-    <footer class="footer-bg-layer pt-222">
+    <footer class="footer-bg-layer pt-222 position-relative">
+        <img class="footer-top-right-layer position-absolute" src="./assets/image/footer-top-right-layer.png"
+            alt="footer-top-right-layer">
         <div class="container">
             <div>
                 <img class="mx-auto d-flex" src="./assets/image/svg/logo.svg" alt="logo">
@@ -281,15 +282,14 @@
             slidesToScroll: 1,
             autoplaySpeed: 2000,
             arrows: false,
-            dots: true,
+            dots: false,
             responsive: [
                 {
                     breakpoint: 1024,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 3,
                         slidesToScroll: 1,
-                        infinite: true,
-                        dots: true
+
                     }
                 },
                 {
@@ -297,6 +297,8 @@
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
+                        infinite: true,
+                        dots: true 
                     }
                 },
 
