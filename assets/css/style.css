@@ -63,15 +63,13 @@
     border-radius: 3.48px;
     background: #39C6FD;
     border: none;
-    z-index: 1;
+    z-index: 2;
     transition: all 200ms linear;
     position: relative;
 }
 
 .login-btn:hover {
-    background: #070D37;
-    border: 1px solid #39C6FD;
-    color: var(--sky-blue);
+    background: white;
 }
 
 .sign-btn {
@@ -81,14 +79,14 @@
     border-radius: 4px;
     background: #070D37;
     border: 1px solid #39C6FD;
-    z-index: 1;
+    z-index: 2;
     transition: all 200ms linear;
     position: relative;
 }
 
 .sign-btn:hover {
-    background: #39C6FD;
-    color: #070D37 !important;
+    background: #162175;
+
 }
 
 .main-btn {
@@ -109,6 +107,10 @@
 .sec-1-top-right-layer {
     top: 0;
     right: 0;
+}
+
+.pl-23 {
+    padding-left: 23px;
 }
 
 /* ---------section-2---------- */
@@ -384,7 +386,7 @@
     width: 376px;
 }
 
-@media (max-width:997.98px) {
+@media (max-width:991.98px) {
     .bug {
         display: none;
     }
