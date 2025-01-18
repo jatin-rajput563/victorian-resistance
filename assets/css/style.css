@@ -56,51 +56,8 @@
     padding-bottom: 9px;
 }
 
-.text-hover-2 {
-    background-image: linear-gradient(to right,
-            white 50%,
-            #39C6FD 50%);
-    background-size: 200% 100%;
-    background-position: -100%;
-    padding: 5px 0;
-    position: relative;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 0.3s ease-in-out;
-}
-
-.text-hover {
-    background-image: linear-gradient(to right,
-            #39C6FD 50%,
-            white 50%);
-    background-size: 200% 100%;
-    background-position: -100%;
-    padding: 5px 0;
-    position: relative;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 0.3s ease-in-out;
-}
-
-.text-hover::before,
-.text-hover-2::before {
-    content: '';
-    background: #54b3d6;
-    position: absolute;
-    bottom: -3px;
-    width: 0;
-    height: 3px;
-    transition: all 0.3s ease-in-out;
-}
-
-.text-hover:hover,
-.text-hover-2:hover {
-    background-position: 0;
-}
-
-.text-hover:hover::before,
-.text-hover-2:hover::before {
-    width: 100%;
+.text-hover:hover {
+    color: #39C6FD;
 }
 
 .nav-btn-1,
