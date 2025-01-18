@@ -1,281 +1,317 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>VICTORIAN-RESISTANCE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VICTORIAN RESISTANCE</title>
+    <link rel="shortcut icon" href="./assets/images/svg/navbar-logo.svg" type="image/x-icon">
+    <!--***** css link *****-->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/root.css  ">
-    <link rel="shortcut icon" href="./assets/image/svg/logo.svg" type="image/x-icon">
+    <!--***** bootstrap link *****-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- slider link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
-<body class="text-white bg-blue">
-    <section class="bg-img min-vh-100 position-relative">
-        <img class="sec-1-top-right-layer position-absolute" src="./assets/image/png/sec-1-top-right-layer.png"
-            alt="sec-1-top-right-layer">
-        <div class="container">
-            <nav class="d-flex justify-content-center justify-content-between py-3">
-                <div>
-                    <img src="./assets/image/svg/logo.svg" alt="logo">
+<body class="bg-color">
+    <!--***** header *****-->
+    <header
+        class="bg-img min-vh-100 d-flex justify-content-center align-items-center align-content-center flex-column position-relative mb-190">
+        <nav class="py-9 w-100">
+            <div class="container max-w-1140">
+                <div class="d-flex align-items-center justify-content-between w-100">
+                    <div class="d-flex align-items-center gap-23">
+                        <img src="./assets/images/svg/navbar-logo.svg" alt="navbar-logo" class="cursor-pointer">
+                        <a class="text-hover-2 font-family-first fw-bold fs-6 lh-23 text-center color-sky-blue text-decoration-none"
+                            href="">VICTORIAN RESISTANCE</a>
+                    </div>
+                    <ul id="name"
+                        class="d-flex mb-0 align-items-center gap-53 nav-link list-unstyled justify-content-center">
+                        <li><a class="text-hover text-decoration-none font-family-first fw-bold fs-6 lh-23 text-center color-white"
+                                href="/">PA02-SIERRA-11 SCOREBOARD</a></li>
+                        <li><a class="text-hover text-decoration-none font-family-first fw-bold fs-6 lh-23 text-center color-white"
+                                href="/">SMURFLING GUIDE</a></li>
+                        <li class="d-lg-none">
+                            <ul class="d-flex list-unstyled gap-20 mb-0">
+                                <li><button
+                                        class="nav-btn-1 font-family-first fw-bold fs-6 lh-23 text-center border-0">LOGIN</button>
+                                </li>
+                                <li><button
+                                        class="nav-btn-2 font-family-first fw-bold fs-6 lh-23 text-center color-sky-blue">SIGN
+                                        UP</button></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="d-flex list-unstyled gap-20 mb-0">
+                        <li><button
+                                class="nav-btn-3 font-family-first fw-bold fs-6 lh-23 text-center border-0">LOGIN</button>
+                        </li>
+                        <li><button
+                                class="nav-btn-4 font-family-first fw-bold fs-6 lh-23 text-center color-sky-blue">SIGN
+                                UP</button></li>
+                    </ul>
+                    <div onclick="navbarbtn()" class="z-5 d-lg-none cursor-pointer">
+                        <span class="menu-lines bg-light" id="rotates"></span>
+                        <span class="menu-lines bg-light" id="transparent"></span>
+                        <span class="menu-lines bg-light" id="rotates2"></span>
+                    </div>
                 </div>
-                <div onclick="navbarbtn()" class="z-5 d-block d-lg-none">
-                    <span class="menu-lines" id="rotats"></span>
-                    <span class="menu-lines" id="transparent"></span>
-                    <span class="menu-lines" id="rotats2"></span>
+            </div>
+        </nav>
+        <div class="flex-grow-1 d-flex justify-content-center align-items-center">
+            <div class="container max-w-1140">
+                <div class="d-flex justify-content-center">
+                    <h1 class="font-family-first fw-normal fs-2xl lh-118 color-white text-center max-w-607 z-1">JOIN THE
+                        VICTORIAN RESISTANCE</h1>
                 </div>
-                <ul id="nav-ul" class="list-unstyled d-flex justify-content-lg-between w-100 py-3 px-2 nav-link justify-content-center align-items-center">
-                    <li class="text-center">
-                        <a class="pl-23 fs-16 fw-700 lh-23 sky-blue oswald-family text-decoration-none z-1 position-relative"
-                            href="#">VICTORIAN RESISTANCE</a>
-                    </li>
-                    <li>
-                        <ul class="d-flex list-unstyled ">
-                            <li class="text-center mt-xl-20">
-                                <a class="text-decoration-none list-unstyled fs-16 fw-700 lh-23 oswald-family text-white"
-                                    href="#">PA02-SIERRA-11 SCOREBOARD</a>
-                            </li>
-
-                            <li class="text-center pl-53 mt-xl-20">
-                                <a class="text-decoration-none list-unstyled fs-16 fw-700 lh-23 oswald-family text-white"
-                                    href="#">SMURFLING
-                                    GUIDE</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul class="list-unstyled d-flex gap-4">
-                            <li class="text-decoration-none list-unstyled text-center">
-                                <button class="login-btn fs-16 fw-700 lh-23 mt-xl-20">LOGIN</button>
-                            </li>
-                            <li class="text-decoration-none list-unstyled text-center">
-                                <button class="sign-btn fs-16 fw-700 lh-23 sky-blue">SIGN UP</button>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            <div class="mt-5">
-                <p class="fs-80 fw-400 lh-118 text-center mx-607 oswald-family mx-auto pt-48 z-2">JOIN THE VICTORIAN
-                    RESISTANCE</p>
-                <p class="fs-16 fw-400 lh-21 text-center open-family z-2">Defend the world, protect what's yours. Join the
-                    Resistance!
-                </p>
-                <button class="fw-700 fs-20 lh-29 dark-blue main-btn d-flex mx-auto mt-5">JOIN THE RESISTANT</button>
+                <h4 class="font-family-second fw-normal fs-6 lh-21 text-center color-white pt-2 z-1">Defend the world,
+                    protect what's yours. Join the Resistance!</h4>
+                <div class="d-flex justify-content-center">
+                    <button
+                        class="join-btn font-family-first fw-bold fs-md lh-23 text-center z-1 mt-68 border-0 z-1">JOIN
+                        THE RESISTANT</button>
+                </div>
             </div>
         </div>
-        <div>
-            <img class="position-absolute left-layer w-sm-100 " src="./assets/image/png/left-layer.png"
-                alt="left-layer">
-            <img class="position-absolute bottom-layer w-100 z-2 position-relative" src="./assets/image/png/sec-1-bottom-layer.png"
-                alt="sec-1-bottom-layer">
-        </div>
-    </section>
-    <!-- =======section-2========= -->
-    <section class="bg-blue position-relative pt-190">
-        <div>
-            <img class="position-absolute top-rght-layer" src="./assets/image/png/sec-2-right-top-layer.png"
-                alt="sec-2-right-top-layer">
-        </div>
-        <div class="container">
+        <img src="./assets/images/png/layer.png" alt="layer-img" class="position-absolute layer w-100">
+    </header>
+    <!--***** section 1 *****-->
+    <section class="d-flex justify-content-center align-items-center align-content-center position-relative mb-178">
+        <img src="./assets/images/svg/triangle-svg.svg" alt="triangle-svg" class="position-absolute triangle-svg">
+        <div class="container max-w-1140">
             <div class="row">
-                <div class="col-12 col-md-5  position-relative justify-content-center d-flex">
-                    <img class="position-absolute iphone-bg-layer mt-5"
-                        src="./assets/image/png/iphone-bg-layer.png" alt="iphone-bg-layer">
-                    <img class="z-2 ml-sm-48 " src="./assets/image/png/iphone-12.png" alt="iphone-12.png">
+                <div class="col-12 col-lg-5 position-relative">
+                    <div class="d-flex justify-content-center">
+                        <img src="./assets/images/png/iphone.png" alt="phone-svg" class="z-1">
+                        <img src="./assets/images/png/iphone-bg-layer.png" alt="iphone-background-layer"
+                            class="position-absolute phone-bg-layer z-n1 d-lg-block d-none">
+                    </div>
                 </div>
-                <div class="col-12 col-md-7">
-                    <div>
-                        <h2 class="fw-400 fs-48 lh-71 pt-3 oswald-family">ABOUT US</h2>
-                        <p class="mx-627 fs-16 fw-400 lh-25 text-start open-family">Ingress is an augmented reality game
-                            that turns
-                            the world around you into a battle, <br> with
-                            humankind's minds at stake. <br>
-                            Play Ingress on the streets of Victoria. Meet agents who play in the areas you do and fight
+                <div class="col-12 col-lg-7 pt-5 pt-lg-0 z-1">
+                    <h2
+                        class="font-family-first fw-normal lh-71 fs-xl color-white d-flex d-lg-block justify-content-center z-2">
+                        ABOUT US</h2>
+                    <div class="d-flex d-lg-block justify-content-center">
+                        <p class="font-family-second fw-normal fs-6 lh-25 color-white max-w-627">Ingress is an augmented
+                            reality game that turns the world around you into a battle, with humankind's minds at stake.
+                            <br> Ingress on the streets of Victoria. Meet agents who play in the areas you do and fight
                             with them to protect humanity's freedom. Discover agents you can depend on to help you when
-                            you need assistance in the field. <br>
-                            Download the mobile scanner app to discover thousands of portals around you. Buildings,
-                            historic landmarks and cultural points of interest become portals for you to fight for and
-                            defend from alien incursion.</p>
-                        <p class="mx-627 fs-16 fw-400 lh-25 text-start open-family">The Victorian Resistance has a
-                            long and proud
-                            history of teamwork, collaboration and most
-                            importantly, fun! <br>
-                            By joining us, you'll have access to regular events so you can stock up on gear, regular
-                            operations so you can put your mark on the map, as well as help almost any time of the day
-                            or night. <br>
-                            Joining the community benefits you and everyone else — it takes eight level 8 players to
-                            make a level 8 portal, and the easier it is to coordinate with people, the more easily
-                            you'll be able to gear up to take and hold your area.</p>
-                        <div class="d-flex gap-30 my-50">
-                            <img class="sec-2-btns" src="./assets/image/png/apple-btn.png" alt="apple-btn">
-                            <img class="sec-2-btns" src="./assets/image/png/google-btn.png" alt="google-btn">
-                        </div>
+                            you need assistance in the field.<br> Download the mobile scanner app to discover thousands
+                            of portals around you. Buildings, historic landmarks and cultural points of interest become
+                            portals for you to fight for and defend from alien incursion.
+                        </p>
+                    </div>
+                    <div class="d-flex d-lg-block justify-content-center">
+                        <p class="font-family-second fw-normal fs-6 lh-25 color-white max-w-627">The Victorian
+                            Resistance has a long and proud history of teamwork, collaboration and most importantly,
+                            fun! <br>By joining us, you'll have access to regular events so you can stock up on gear,
+                            regular operations so you can put your mark on the map, as well as help almost any time of
+                            the day or night. <br>Joining the community benefits you and everyone else — it takes eight
+                            level 8 players to make a level 8 portal, and the easier it is to coordinate with people,
+                            the more easily you'll be able to gear up to take and hold your area.</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-30 mt-63 justify-content-center justify-content-lg-start">
+                        <a class="z-1" href="https://www.apple.com/in/app-store/" target="_blank">
+                            <img src="./assets/images/svg/app-store-svg.svg" alt="app-store"
+                                class="app-store w-100"></a>
+                        <a href="https://play.google.com/store/apps?hl=en_IN&pli=1" target="_blank">
+                            <img src="./assets/images/svg/google-play-svg.svg" alt="google-play"
+                                class="app-store w-100"></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- =======section-3========= -->
-    <section class="bg-blue mt-190">
-        <p class="fw-400 fs-48 lh-71 mx-632 oswald-family text-center mx-auto">Your world is the game board, and your
-            mind is at stake.</p>
-        <p class="fw-400 fs-16 lh-21 open-famly mx-516 text-center mx-auto">At the heart of Ingress is a desire to bring
-            people together through exploration and teamwork.</p>
-        <div class="slider">
-            <img class="slider-image-size pl-30 d-flex" src="./assets/image/png/slider-img-1.png" alt="slider-img-1">
-            <img class="slider-image-size pl-30 d-flex" src="./assets/image/png/slider-img-2.png" alt="slider-img-2">
-            <img class="slider-image-size pl-30 d-flex" src="./assets/image/png/slider-img-3.png" alt="slider-img-3">
-            <img class="slider-image-size pl-30 d-flex" src="./assets/image/png/slider-img-2.png" alt="slider-img-2">
+    <!--***** slider *****-->
+    <section class="d-flex justify-content-center align-items-center align-content-center flex-column mb-198">
+        <div class="container max-w-1140">
+            <div class="d-flex justify-content-center">
+                <h2 class="font-family-first fw-normal lh-71 text-center color-white fs-xl max-w-632">Your world is the
+                    game board, and your mind is at stake.</h2>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <p class="font-family-second fw-normal fs-6 lh-21 text-center color-white max-w-516 mt-17 px-12">At the
+                heart of Ingress is a desire to bring people together through exploration and teamwork.
+            </p>
+        </div>
+        <div class="slider w-100 mt-51">
+            <div class="slider-card w-100">
+                <img src="./assets/images/png/slider-img-1.png" alt="slider-img-1" class="w-100">
+            </div>
+            <div class="slider-card w-100">
+                <img src="./assets/images/png/slider-img-2.png" alt="slider-img-2" class="w-100">
+            </div>
+            <div class="slider-card w-100">
+                <img src="./assets/images/png/slider-img-3.png" alt="slider-img-3" class="w-100">
+            </div>
+            <div class="slider-card w-100">
+                <img src="./assets/images/png/slider-img-2.png" alt="slider-img-2" class="w-100">
+            </div>
         </div>
     </section>
-    <!-- =======section-4========= -->
-
-
-
-    
-    <section class="bg-blue position-relative">
-        <p class="fw-400 fs48 lh-71 oswald-family text-center">FAQs</p>
-        <p class="fw-400 fs-16 lh-21 open-family mx-680 text-center mx-auto pb-77 ">Porta maecenas consequat sed neque
-            gravida
-            eleifend fusce cursus amet. Turpis enim sed pharetra tempus
-            ullamcorper mauris mauris facilisis.</p>
-        <div>
-            <img class="position-absolute accordion-top-left-layer z-1 w-md-100"
-                src="./assets/image/png/accordion-top-left-layer.png" alt="accordion-top-left-layer">
+    <!--***** accordion *****-->
+    <section
+        class="section-3 d-flex justify-content-center align-items-center align-content-center flex-column mb-200 position-relative">
+        <img src="./assets/images/svg/left-triangle-img.svg" alt="triangle-svg"
+            class="left-triangle position-absolute w- 100">
+        <div class="container max-w-1140">
+            <div class="font-family-first fw-normal fs-xl lh-71 text-center color-white">FAQs</div>
+            <div class="d-flex justify-content-center">
+                <div class="font-family-second fw-normal fs-sm lh-21 text-center color-white max-w-680 pt-12">Porta
+                    maecenas consequat sed neque gravida eleifend fusce cursus amet. Turpis enim sed
+                    pharetra tempus ullamcorper mauris mauris facilisis.</div>
+            </div>
         </div>
-        <div class="container">
-            <div class="justify-content-center align-items-center d-flex">
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item mx-946">
-                        <h2 class="accordion-header ">
-                            <button class="accordion-button fs-20 fw-700 lh-29 oswald-family text-white" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                                aria-controls="collapseOne">
-                                <span class="pr-13">Q1.</span> Aliquam magnis sed arcu rutrum quisque sed aliquet
-                                vestibulum?
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <p class="open-family fw-400 fs-16 lh-21 text-white mx-810">Volutpat etiam tincidunt leo
-                                    amet pulvinar. Adipiscing vestibulum enim ornare
-                                    vestibulum. Mauris sit hendrerit interdum neque mattis enim eget. Quam lorem id nisi
-                                    eget nisl tortor semper elit. Id aliquam morbi ac potenti. Egestas ac tellus amet
-                                    suspendisse mattis dictum. Ac viverra auctor a vitae dolor nisi.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item mx-946 mt-52">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-20 fw-700 lh-29 oswald-family text-white"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                aria-expanded="false" aria-controls="collapseTwo">
-                                <span class="pr-13">Q2.</span> A semper enim quis non aenean adipiscing lectus neque?
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <p class="open-family fw-400 fs-16 lh-21 text-white mx-810">Volutpat etiam tincidunt leo
-                                    amet pulvinar. Adipiscing vestibulum enim ornare
-                                    vestibulum. Mauris sit hendrerit interdum neque mattis enim eget. Quam lorem id nisi
-                                    eget nisl tortor semper elit. Id aliquam morbi ac potenti. Egestas ac tellus amet
-                                    suspendisse mattis dictum. Ac viverra auctor a vitae dolor nisi.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item mx-946 mt-52">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-20 fw-700 lh-29 oswald-family text-white"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                aria-expanded="false" aria-controls="collapseThree">
-                                <span class="pr-13">Q3.</span>Consectetur faucibus velit aliquam dictum vestibulum
-                                sollicitudinlla dapibus consectetur suscipit1?
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <p class="open-family fw-400 fs-16 lh-21 text-white mx-810">Volutpat etiam tincidunt leo
-                                    amet pulvinar. Adipiscing vestibulum enim ornare
-                                    vestibulum. Mauris sit hendrerit interdum neque mattis enim eget. Quam lorem id nisi
-                                    eget nisl tortor semper elit. Id aliquam morbi ac potenti. Egestas ac tellus amet
-                                    suspendisse mattis dictum. Ac viverra auctor a vitae dolor nisi.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item mx-946 mt-52">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-20 fw-700 lh-29 oswald-family text-white"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                aria-expanded="false" aria-controls="collapseFour">
-                                <span class="pr-13">Q4.</span>Volutpat cras natoque suscipit in semisus euismod?
-                            </button>
-                        </h2>
-                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <p class="open-family fw-400 fs-16 lh-21 text-white mx-810">Volutpat etiam tincidunt leo
-                                    amet pulvinar. Adipiscing vestibulum enim ornare
-                                    vestibulum. Mauris sit hendrerit interdum neque mattis enim eget. Quam lorem id nisi
-                                    eget nisl tortor semper elit. Id aliquam morbi ac potenti. Egestas ac tellus amet
-                                    suspendisse mattis dictum. Ac viverra auctor a vitae dolor nisi.</p>
-                            </div>
-                        </div>
+        <div class="accordion accordion-flush mt-25" id="accordionFlushExample">
+            <div class="accordion-item bg-transparent">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <span class="font-family-first fw-bold color-white fs-md lh-29 align-items-start d-flex"> <span
+                                class="pr-13">Q1.</span>Aliquam magnis sed arcu rutrum quisque sed aliquet
+                            vestibulum?</span>
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body font-family-second fw-normal fs-sm lh-21 color-white max-w-830">Volutpat
+                        etiam tincidunt leo amet pulvinar. Adipiscing vestibulum enim ornare vestibulum. Mauris sit
+                        hendrerit interdum neque mattis enim eget. Quam lorem id nisi eget nisl tortor semper elit. Id
+                        aliquam morbi ac potenti. Egestas ac tellus amet suspendisse mattis dictum. Ac viverra auctor a
+                        vitae dolor nisi.
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- =======section-5========= -->
-    <section class="bg-layer min-vh-100 justify-content-center align-items-center d-flex position-relative">
-        <div class="container">
-            <div class="sec-4-main-box">
-                <img class="sec-4-iphone-1 d-xl-none d-flex mx-auto mt-4 pl-30 w-sm-100"
-                    src="./assets/image/png/sec-4-iphone.png" alt="">
-                <p class="oswald-family fw-400 fs-48 lh-71 pt-65 ml-73">JOIN THE RESISTANCE</p>
-                <p class="open-family fw-400 fs-16 lh-21 mx-582 pt-10 ml-73">Volutpat etiam tincidunt leo amet pulvinar.
-                    Adipiscing
-                    vestibulum enim ornare vestibulum. Mauris sit
-                    hendrerit interdum neque mattis enim egenisi.</p>
-                <button class="join-btn oswald-family fs-16 fw-700 lh-23 mt-60 ml-73 mb-89">JOIN NOW</button>
+            <div class="line"></div>
+            <div class="accordion-item bg-transparent">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <span class="font-family-first fw-bold color-white fs-md lh-29 align-items-start d-flex"> <span
+                                class="pr-13">Q2.</span>A semper enim quis non aenean adipiscing lectus neque?</span>
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body font-family-second fw-normal fs-sm lh-21 color-white max-w-830">Volutpat
+                        etiam tincidunt leo amet pulvinar. Adipiscing vestibulum enim ornare vestibulum. Mauris sit
+                        hendrerit interdum neque mattis enim eget. Quam lorem id nisi eget nisl tortor semper elit. Id
+                        aliquam morbi ac potenti. Egestas ac tellus amet suspendisse mattis dictum. Ac viverra auctor a
+                        vitae dolor nisi.
+                    </div>
+                </div>
             </div>
-            <img class="position-absolute sec-4-iphone" src="./assets/image/png/sec-4-iphone.png" alt="">
+            <div class="line"></div>
+            <div class="accordion-item bg-transparent">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <span class="font-family-first fw-bold color-white fs-md lh-29 align-items-start d-flex"> <span
+                                class="pr-13">Q3.</span>Consectetur faucibus velit aliquam dictum vestibulum
+                            sollicitudinlla dapibus consectetur suscipit1?</span>
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body font-family-second fw-normal fs-sm lh-21 color-white max-w-830">Volutpat
+                        etiam tincidunt leo amet pulvinar. Adipiscing vestibulum enim ornare vestibulum. Mauris sit
+                        hendrerit interdum neque mattis enim eget. Quam lorem id nisi eget nisl tortor semper elit. Id
+                        aliquam morbi ac potenti. Egestas ac tellus amet suspendisse mattis dictum. Ac viverra auctor a
+                        vitae dolor nisi.
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="accordion-item bg-transparent">
+                <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        <span class="font-family-first fw-bold color-white fs-md lh-29 align-items-start d-flex"> <span
+                                class="pr-13">Q4.</span>Volutpat cras natoque suscipit in semisus euismod?</span>
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body font-family-second fw-normal fs-sm lh-21 color-white max-w-830">Volutpat
+                        etiam tincidunt leo amet pulvinar. Adipiscing vestibulum enim ornare vestibulum. Mauris sit
+                        hendrerit interdum neque mattis enim eget. Quam lorem id nisi eget nisl tortor semper elit. Id
+                        aliquam morbi ac potenti. Egestas ac tellus amet suspendisse mattis dictum. Ac viverra auctor a
+                        vitae dolor nisi.
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
         </div>
     </section>
-    <!-- =======section-5========= -->
-    <footer class="footer-bg-layer pt-222 position-relative">
-        <img class="footer-top-right-layer position-absolute" src="./assets/image/png/footer-top-right-layer.png"
-            alt="footer-top-right-layer">
-        <div class="container">
-            <div>
-                <img class="mx-auto d-flex" src="./assets/image/svg/logo.svg" alt="logo">
-                <p class="open-family fw-400 fs-16 lh-21 mx-810 text-center mx-auto pt-4">Volutpat etiam tincidunt leo
-                    amet pulvinar. Adipiscing vestibulum enim ornare vestibulum. Mauris sit
-                    hendrerit interdum neque mattis enim eget. Quasi.</p>
-                <div class="d-flex justify-content-center align-items-center mt-52">
-                    <p class="oswald-family fw-400 fs16 lh-23">PA02-SIERRA-11 SCOREBOARD</p>
-                    <p class="oswald-family fw-400 fs16 lh-23 pl-63">SMURFLING GUIDE</p>
+    <!--***** section 4 *****-->
+    <section class="bg-img-2 d-flex align-items-center justify-content-center min-vh-100 mb-32 position-relative">
+        <img src="./assets/images/svg/triangle-svg.svg" alt="triangle-img" class="position-absolute triangle-img z-n1">
+        <div class="container max-w-1140">
+            <div class="box position-relative">
+                <div class="d-flex justify-content-center justify-content-lg-start">
+                    <img src="./assets/images/svg/iphone-2.svg" alt="" class="iphone w-100 d-lg-none ">
+                </div>
+                <div class="d-flex justify-content-center justify-content-lg-start">
+                    <h2 class="font-family-first fw-normal fs-xl lh-71 color-white">JOIN THE RESISTANCE</h2>
+                </div>
+                <div class="d-flex justify-content-center justify-content-lg-start">
+                    <p
+                        class="font-family-second fw-normal fs-sm lh-21 color-white max-w-582 pt-10 text-center text-lg-start">
+                        Volutpat etiam tincidunt leo amet pulvinar. Adipiscing vestibulum enim ornare vestibulum.
+                        Mauris sit hendrerit interdum neque mattis enim egenisi.</p>
+                </div>
+                <div class="d-flex justify-content-center justify-content-lg-start">
+                    <button class="join-btn-2 fw-bold font-family-first fs-sm lh-23 mt-60">JOIN NOW</button>
+                </div>
+                <img src="./assets/images/svg/iphone-2.svg" alt="phone-img"
+                    class="position-absolute phone-img d-none d-lg-block">
+            </div>
+        </div>
+    </section>
+    <!--***** footer *****-->
+    <footer class="bg-img-3">
+        <div class="container max-w-1140">
+            <div class="d-flex justify-content-center">
+                <img src="./assets/images/svg/footer-logo.svg" alt="logo" class="cursor-pointer">
+            </div>
+            <div class="d-flex justify-content-center">
+                <p
+                    class="font-family-second fw-normal fs-sm lh-21 text-center color-white opacity-70 max-width-810 pt-4">
+                    Volutpat etiam tincidunt leo amet pulvinar. Adipiscing vestibulum enim ornare vestibulum.
+                    Mauris sit hendrerit interdum neque mattis enim eget. Quasi.</p>
+            </div>
+            <div class="d-sm-flex gap-63 justify-content-center pt-52">
+                <div class="d-flex justify-content-center">
+                    <a class="text-hover text-decoration-none font-family-first fw-normal lh-23 fs-sm color-white"
+                        href="">PA02-SIERRA-11 SCOREBOARD</a>
+
+                </div>
+                <div class="d-flex justify-content-center pt-3 pt-sm-0">
+                    <a class="text-hover text-decoration-none font-family-first fw-normal lh-23 fs-sm color-white"
+                        href="">SMURFLING GUIDE</a>
                 </div>
             </div>
         </div>
-        <div class="bottom-line"></div>
-        <div class="d-flex mb-3 justify-content-center align-items-center">
-            <img src="./assets/image/svg/copyright-svg.svg" alt="copyright-svg">
-            <p class="open-family fw-400 fs-12 lh-16 grey pt-3">copyright2025victorianresistance</p>
+        <div class="line-2 w-100 mt-60"></div>
+        <div class="d-flex justify-content-center pt-4 pb-36">
+            <h4 class="font-family-second fw-normal fs-small lh-16 text-center  color-white opacity-70 max-width-195">
+                ©copyright2025victorianresistance</h4>
         </div>
     </footer>
+    <!--***** bootstrap link *****-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <!-- slider link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -283,45 +319,55 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        $('.slider').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            autoplaySpeed: 2000,
-            arrows: false,
-            dots: false,
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-
-                    }
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: true
-                    }
-                },
-
-
-            ]
-        });
-    </script>
-    <script>
+    <!--***** JS link *****-->
+    <script>// navbar 
         const navbarbtn = () => {
-            document.getElementById("nav-ul").classList.toggle("show-nvabar")
-            document.getElementById("rotats").classList.toggle("rotate40")
+            document.getElementById("name").classList.toggle("show-navbar")
+            document.getElementById("rotates").classList.toggle("rotate40")
             document.getElementById("transparent").classList.toggle("bg-transparent")
-            document.getElementById("rotats2").classList.toggle("rotate-45")
+            document.getElementById("rotates2").classList.toggle("rotate-45")
             document.body.classList.toggle("overflow-hidden")
         }
     </script>
+    <script>
+        // slider
+        $('.slider').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            variableWidth: true,
+            centerMode: true,
+            centerPadding: '40px',
+            responsive: [
+
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        autoplay: true,
+                        autoplaySpeed: 1000,
+                        centerMode: true,
+                        centerPadding: '40px',
+                    }
+                },
+                {
+                    breakpoint: 786,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 1000,
+                        centerMode: true,
+                        centerPadding: '40px',
+                    }
+                }
+            ]
+        });</script>
 </body>
 
 </html>
